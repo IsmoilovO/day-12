@@ -1,0 +1,106 @@
+.port {
+    padding: 80px 0;
+    background-image: url("../img/port-mob.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.port__title {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 112%;
+    letter-spacing: -0.01em;
+
+    color: #fbfcfe;
+    margin-bottom: 16px;
+}
+
+.port__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 187%;
+
+    color: #fbfcfe;
+    opacity: 0.7;
+    margin-bottom: 60px;
+}
+
+.port__btn {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: -0.01em;
+
+    color: #fbfcfe;
+    padding: 16px 32px;
+    border: 1px solid #fbfcfe;
+    border-radius: 24px;
+}
+
+.port__item_list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 46px;
+    margin-bottom: 56px;
+}
+
+.port__block {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.port__list {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .port {
+        background-image: url("../img/port-planshe.png");
+        padding: 88px 116px;
+    }
+
+    .port__item_list {
+        width: 536px;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 64px;
+    }
+
+    .port__title {
+        margin-bottom: 24px;
+    }
+
+    .port__text {
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (min-width: 1110px) {
+    .port {
+        background-image: url("../img/port-destkvtop.png");
+        padding: 88px 116px;
+        margin-top: 105px;
+    }
+
+    .port__block {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .port__list {
+        width: 445px;
+        text-align: start;
+    }
+
+    .port__item_list {
+        gap: 39px;
+        justify-content: space-between;
+    }
+}
